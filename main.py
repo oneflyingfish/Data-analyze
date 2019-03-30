@@ -48,7 +48,7 @@ def main():
     for i in range(1,8):
         print "第%d天总数据量%d"%(i,sum(a[i].values()))
     
-    #第一小题：
+    #第一个模块
     for i in range(1,8):
         print('第%d天---------'%i)
         for j in a[i].keys():
@@ -63,7 +63,7 @@ def main():
     print "最大值：%f\n最小值：%f\n平均数：%4f\n中位数：%4f\n方差：%4f"%(max(datalist),min(datalist),sum(datalist)/len(datalist),data[(len(data)+1)//2],fc)    
     DrawPicture(datalist,'192.168.9.1-->239.255.255.250 times')
     
-    #第二小题：
+    #第二个模块
     datalist=[]  
     for i in range(1,8):
         times2=0
@@ -75,7 +75,7 @@ def main():
         datalist.append(times2*1.0/sum(a[i].values()))
     DrawPicture(datalist,'from 192.168.9.1')
     
-    #第三题:(流入）
+    #第三个模块
     datalist=[]  
     for i in range(1,8):
         times2=0
@@ -87,7 +87,7 @@ def main():
         datalist.append(times2*1.0/sum(a[i].values()))
     DrawPicture(datalist,'from 192.168.9.226')
     
-    #第三题:(流出）
+    #第四个模块
     datalist=[]  
     for i in range(1,8):
         times2=0
